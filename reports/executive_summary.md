@@ -50,12 +50,12 @@ matching actual call volume. It also lacks incident-level location
 (street address / lat-long), limiting geographic analysis to a coarse
 Urban/Suburban/Rural category. Both limitations are disclosed here rather
 than smoothed over, and both would resolve automatically once this
-pipeline is pointed at real Brunswick County incident records (e.g. from
+pipeline is pointed at real incident records (e.g. from
 ImageTrend/NFIRS).
 
 ## Next Steps
 
-1. Re-run this pipeline against real Brunswick County dispatch/incident data.
+1. Re-run this pipeline against real dispatch/incident data.
 2. If a real geographic field is available, extend the region-level analysis
    to point-level incident mapping (ArcGIS or Tableau).
 3. Revisit the dispatch-mode classification model once real decision

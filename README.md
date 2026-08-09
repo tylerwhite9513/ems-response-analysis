@@ -1,11 +1,12 @@
-# Brunswick County EMS Dispatch Response Analysis
+# EMS Dispatch Response Analysis
 
-A data analysis portfolio project built to demonstrate the skillset requested
-in Brunswick County, NC's **Data Analyst – Emergency Management Fire Services**
-posting: response-time analysis, incident-volume trends, geographic trends,
-statistical analysis, dashboard development, and predictive analytics.
+A data analysis project examining emergency dispatch response times, incident
+volume patterns, and dispatch resource selection (ambulance vs. drone vs.
+hybrid) using a large simulated dispatch dataset.
 
-**Live dashboard:** *[Tableau Public link goes here once published — see `dashboards/tableau_dashboard_guide.md`]*
+**Live dashboard:** *[Tableau Public link goes here once published]*
+
+![Dashboard screenshot](dashboards/dashboard_screenshot.png)
 
 ## Business Question
 
@@ -21,13 +22,12 @@ ambulance vs. drone-based emergency response. *(Add the exact Kaggle listing
 URL here.)*
 
 **Important caveat, stated up front:** this is a synthetic/simulated dataset,
-not real Brunswick County incident data. It has no street address or
-latitude/longitude — only a coarse `Region_Type` field (Urban / Suburban /
-Rural) — so the "geographic trends" analysis here works at the region level
-rather than a true GIS incident map. With real fire/EMS records (e.g. from
-ImageTrend or an NFIRS export, both mentioned in the posting), the same
-pipeline would extend directly to point-level mapping in ArcGIS or Tableau's
-native mapping. Records also occur at a fixed ~10-minute interval rather than
+not real-world incident data. It has no street address or latitude/longitude
+— only a coarse `Region_Type` field (Urban / Suburban / Rural) — so the
+"geographic trends" analysis here works at the region level rather than a
+true GIS incident map. With real fire/EMS records, the same pipeline would
+extend directly to point-level mapping in ArcGIS or Tableau's native
+mapping. Records also occur at a fixed ~10-minute interval rather than
 matching real-world incident timing, which is disclosed rather than
 presented as a seasonal pattern.
 
@@ -75,7 +75,7 @@ presented as a seasonal pattern.
 │   ├── predictive_model.md
 │   └── executive_summary.md  # one-page, stakeholder-facing writeup
 ├── dashboards/
-│   └── tableau_dashboard_guide.md
+│   └── dashboard_screenshot.png  # screenshot of the published Tableau dashboard
 ├── requirements.txt
 └── .gitignore
 ```
@@ -84,8 +84,8 @@ presented as a seasonal pattern.
 
 ```bash
 # 1. Clone this repo and enter it
-git clone https://github.com/<your-username>/brunswick-ems-response-analysis.git
-cd brunswick-ems-response-analysis
+git clone https://github.com/<your-username>/ems-response-analysis.git
+cd ems-response-analysis
 
 # 2. Set up a virtual environment
 python -m venv venv
@@ -107,23 +107,24 @@ python scripts/05_export_for_tableau.py
 ```
 
 Each script prints its progress and writes its outputs to `data/processed/`,
-`data/tableau/`, or `reports/`. See `dashboards/tableau_dashboard_guide.md`
-for building the dashboard from the exported tables.
+`data/tableau/`, or `reports/`.
 
-## Skills Demonstrated (mapped to the job posting)
+## Skills Demonstrated
 
-| Posting requirement | Where it's demonstrated |
-|---|---|
-| Analyzing response times, incident volumes, staffing, geographic trends | `scripts/02_eda_response_time.py`, `reports/eda_summary.md` |
-| Examining/manipulating large datasets | `scripts/01_data_cleaning.py` (368K rows, dtype optimization, validation) |
-| Statistical techniques | `scripts/03_statistical_analysis.py` — t-test, ANOVA, Pearson correlation, chi-square |
-| Charts and visual presentations | `reports/figures/` (11 charts) |
-| Dashboards | `dashboards/tableau_dashboard_guide.md` + published Tableau Public dashboard |
-| Predictive analytics models (preferred) | `scripts/04_predictive_model.py` — Random Forest classifier, honestly evaluated |
-| Communicating to non-technical audiences (preferred) | `reports/executive_summary.md` |
-| Database/relational data handling (preferred) | Cleaned data structured for direct load into a relational table; see `data/processed/` |
+- Data cleaning and validation on a large dataset (368K rows): null handling,
+  dtype optimization, range checks
+- Exploratory analysis of response times, incident volumes, and geographic
+  (region-level) trends
+- Statistical hypothesis testing: t-test, ANOVA, Pearson correlation,
+  chi-square test of independence
+- Data visualization: 11 charts covering distributions, trends, and
+  comparisons
+- Dashboard development in Tableau
+- Predictive modeling: Random Forest classifier, with honest evaluation
+  against a baseline rather than an inflated headline metric
+- Clear written communication for both technical and non-technical audiences
+  (`reports/executive_summary.md`)
 
 ## Author
 
-*[Your name] — built as a portfolio project for the Brunswick County Data
-Analyst (Emergency Management Fire Services) application.*
+*Tyler White*
