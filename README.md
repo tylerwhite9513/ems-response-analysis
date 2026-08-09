@@ -18,8 +18,7 @@ drone, or both) should be sent to a given incident?
 
 [Emergency Service Routing with Timestamps](https://www.kaggle.com/) dataset
 via Kaggle — 368,065 simulated dispatch records spanning 2018–2024, comparing
-ambulance vs. drone-based emergency response. *(Add the exact Kaggle listing
-URL here.)*
+ambulance vs. drone-based emergency response. *(https://www.kaggle.com/datasets/datasetengineer/integrated-emergency-response-dataset-ierad)*
 
 **Important caveat, stated up front:** this is a synthetic/simulated dataset,
 not real-world incident data. It has no street address or latitude/longitude
