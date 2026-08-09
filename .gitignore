@@ -1,0 +1,22 @@
+# Raw data is too large for GitHub and is publicly downloadable from Kaggle;
+# see README.md "Data Source" section for the link. Keep it local only.
+data/raw/*.csv
+data/processed/ems_cleaned.csv
+
+# Keep the small, repo-friendly files:
+!data/processed/ems_cleaned_sample.csv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tableau temp files
+*.twbx.lock
+*.hyper

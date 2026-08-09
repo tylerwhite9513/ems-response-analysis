@@ -1,0 +1,37 @@
+Region_Type,Incident_Type,Label,Incident_Count
+Rural,Accident,Ambulance Only,7360
+Rural,Accident,Drone Only,9022
+Rural,Accident,Hybrid Dispatch,1824
+Rural,Cardiac Arrest,Ambulance Only,2930
+Rural,Cardiac Arrest,Drone Only,3654
+Rural,Cardiac Arrest,Hybrid Dispatch,724
+Rural,Fire,Ambulance Only,1459
+Rural,Fire,Drone Only,1871
+Rural,Fire,Hybrid Dispatch,372
+Rural,Other,Ambulance Only,2987
+Rural,Other,Drone Only,3677
+Rural,Other,Hybrid Dispatch,769
+Suburban,Accident,Ambulance Only,14743
+Suburban,Accident,Drone Only,18605
+Suburban,Accident,Hybrid Dispatch,3632
+Suburban,Cardiac Arrest,Ambulance Only,6005
+Suburban,Cardiac Arrest,Drone Only,7299
+Suburban,Cardiac Arrest,Hybrid Dispatch,1465
+Suburban,Fire,Ambulance Only,2897
+Suburban,Fire,Drone Only,3623
+Suburban,Fire,Hybrid Dispatch,732
+Suburban,Other,Ambulance Only,5974
+Suburban,Other,Drone Only,7340
+Suburban,Other,Hybrid Dispatch,1496
+Urban,Accident,Ambulance Only,51509
+Urban,Accident,Drone Only,64427
+Urban,Accident,Hybrid Dispatch,12992
+Urban,Cardiac Arrest,Ambulance Only,20802
+Urban,Cardiac Arrest,Drone Only,25794
+Urban,Cardiac Arrest,Hybrid Dispatch,5217
+Urban,Fire,Ambulance Only,10286
+Urban,Fire,Drone Only,12704
+Urban,Fire,Hybrid Dispatch,2572
+Urban,Other,Ambulance Only,20574
+Urban,Other,Drone Only,25674
+Urban,Other,Hybrid Dispatch,5054
