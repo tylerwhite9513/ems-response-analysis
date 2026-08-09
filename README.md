@@ -79,35 +79,6 @@ presented as a seasonal pattern.
 └── .gitignore
 ```
 
-## How to Reproduce
-
-```bash
-# 1. Clone this repo and enter it
-git clone https://github.com/<your-username>/ems-response-analysis.git
-cd ems-response-analysis
-
-# 2. Set up a virtual environment
-python -m venv venv
-venv\Scripts\activate        # Windows
-# source venv/bin/activate   # Mac/Linux
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Download the raw dataset from Kaggle (see Data Source above) and place it at:
-#    data/raw/emergency_service_routing_with_timestamps.csv
-
-# 5. Run the pipeline in order
-python scripts/01_data_cleaning.py
-python scripts/02_eda_response_time.py
-python scripts/03_statistical_analysis.py
-python scripts/04_predictive_model.py
-python scripts/05_export_for_tableau.py
-```
-
-Each script prints its progress and writes its outputs to `data/processed/`,
-`data/tableau/`, or `reports/`.
-
 ## Skills Demonstrated
 
 - Data cleaning and validation on a large dataset (368K rows): null handling,
