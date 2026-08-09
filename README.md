@@ -4,7 +4,7 @@ A data analysis project examining emergency dispatch response times, incident
 volume patterns, and dispatch resource selection (ambulance vs. drone vs.
 hybrid) using a large simulated dispatch dataset.
 
-**Live dashboard:** *[Tableau Public link goes here once published]*
+**Live dashboard:** *https://public.tableau.com/app/profile/tyler.white2393/viz/EMSDispatchPerformance/EMSDispatchPerformanceDashboard?publish=yes*
 
 ![Dashboard screenshot](dashboards/dashboard_screenshot.png)
 
